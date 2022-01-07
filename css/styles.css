@@ -97,7 +97,7 @@ p {
     letter-spacing: 0.03em;
 }
 
-.logo-accent {
+.logo--accent {
     color: var(--accent-color);
 }
 
@@ -106,11 +106,11 @@ p {
     margin-left: 93px;
 }
 
-.site-nav .item + .item {
+.site-nav .site-nav__item + .site-nav__item {
     margin-left: 50px;
 }
 
-.nav-link {
+.site-nav__link {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -127,11 +127,11 @@ p {
     transition: color 250ms var(--timing-function);
 }
 
-.item {
+.site-nav__item {
     position: relative;
 }
 
-.nav-link.active::after {
+.site-nav__link.site-nav__link--active::after {
     content: "";
 
     position: absolute;
@@ -144,29 +144,29 @@ p {
     background-color: var(--accent-color);
 }
 
-.nav-link:hover,
-.nav-link:focus,
-.contact-item:hover,
-.contact-item:focus,
-.footer-contact-item:hover,
-.footer-contact-item:focus {
+.site-nav__link:hover,
+.site-nav__link:focus,
+.header-contacts__link:hover,
+.header-contacts__link:focus,
+.footer-header-contacts__link:hover,
+.footer-header-contacts__link:focus {
     color: var(--accent-color);
 }
 
-.nav-link.active {
+.site-nav__link.site-nav__link--active {
     color: var(--accent-color);
 }
 
-.contact-link {
+.header-contacts {
     display: flex;
     margin-left: auto;
 }
 
-.site-nav .item + .item {
+.site-nav .header-contacts__item + .header-contacts__item {
     margin-left: 50px;
 }
 
-.contact-item {
+.header-contacts__link {
     display: flex;
     align-items: center;
     color: var(--secondary-text-color);
@@ -179,16 +179,11 @@ p {
     transition: color 250ms var(--timing-function);
 }
 
-.contact-link .item + .item {
+.header-contacts .header-contacts__item + .header-contacts__item {
     margin-left: 30px;
 }
 
-.icon-envelope {
-    fill: currentColor;
-    margin-right: 10px;
-}
-
-.icon-smartphone {
+.header-contacts__icon {
     fill: currentColor;
     margin-right: 10px;
 }
@@ -214,7 +209,7 @@ p {
     background-position: center;
 }
 
-.hero-title {
+.hero-container__title {
     color: var(--white-text-color);
     font-weight: 900;
     font-size: 44px;
@@ -226,7 +221,7 @@ p {
     margin-bottom: 30px;
 }
 
-.hero-order-btn {
+.hero-container__btn {
     display: inline-block;
     border-radius: 4px;
     padding: 10px 32px;
@@ -249,15 +244,15 @@ p {
 
 /* Преимущества */
 
-.advantages-container {
+.advantages {
     display: flex;
 }
 
-.advantages-card {
+.advantages__card {
     flex-basis: calc(100% / 4);
 }
 
-.advantages-bcg {
+.advantages__bcg {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -268,11 +263,11 @@ p {
     margin-bottom: 30px;
 }
 
-.advantages-card:not(:last-child) {
+.advantages__card:not(:last-child) {
     margin-right: 30px;
 }
 
-.advantages-item {
+.advantages__item {
     margin-bottom: 10px;
 
     font-weight: 700;
@@ -282,7 +277,7 @@ p {
     text-transform: uppercase;
 }
 
-.advantages-description {
+.advantages__description {
     margin-bottom: 0;
     font-size: 14px;
     line-height: 1.7;
@@ -297,19 +292,19 @@ p {
     padding-top: 0;
 }
 
-.occupation-container {
+.occupation {
     display: flex;
 }
 
-.occupation-card:not(:last-child) {
+.occupation__card:not(:last-child) {
     margin-right: 30px;
 }
 
-.occupation-card {
+.occupation__card {
     position: relative;
 }
 
-.occupation-example {
+.occupation__example {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -322,7 +317,7 @@ p {
     background-color: rgba(47, 48, 58, 0.8);
 }
 
-.occupation-name {
+.occupation__name {
     font-weight: 700;
     font-size: 14px;
 
@@ -339,9 +334,9 @@ p {
     background-color: var(--secondary-background-color);
 }
 
-.occupation-title,
-.team-title,
-.clients-title {
+.occupation__title,
+.team__title,
+.clients__title {
     margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
@@ -367,11 +362,11 @@ p {
     margin-right: 30px;
 }
 
-.teamcard-info {
+.team-card__info {
     padding: 30px 0;
 }
 
-.team-name {
+.team-card__name {
     margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
@@ -380,7 +375,7 @@ p {
     letter-spacing: 0.03em;
 }
 
-.team-position {
+.team-card__position {
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
@@ -394,7 +389,7 @@ p {
     justify-content: center;
 }
 
-.icon-wrapper {
+.social-list__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -412,21 +407,21 @@ p {
     margin-left: 10px;
 }
 
-.social-icon {
+.social-list__icon {
     fill: currentColor;
 }
 
-.icon-wrapper:hover,
-.icon-wrapper:focus {
+.social-list__link:hover,
+.social-list__link:focus {
     color: var(--secondary-background-color);
     background-color: var(--accent-color);
 }
 
-.clients-list {
+.clients__list {
     display: flex;
 }
 
-.clients-list > li + li {
+.clients__list > li + li {
     margin-left: 30px;
 }
 
@@ -434,7 +429,7 @@ p {
     fill: currentColor;
 }
 
-.logo-wrapper {
+.clients__link {
     color: var(--icon-color);
     display: flex;
     justify-content: center;
@@ -448,8 +443,8 @@ p {
     transition: color 250ms var(--timing-function), border-color 250ms var(--timing-function);
 }
 
-.logo-wrapper:focus,
-.logo-wrapper:hover {
+.clients__link:focus,
+.clients__link:hover {
     color: var(--accent-color);
     border-color: var(--accent-color);
 }
@@ -468,12 +463,12 @@ p {
     align-items: baseline;
 }
 
-.adress-container {
+.footer-contacts {
     flex-grow: 1;
     margin-right: 70px;
 }
 
-.footer-logo {
+.footer-contacts__logo {
     display: inline-block;
     margin-bottom: 20px;
 
@@ -485,11 +480,11 @@ p {
     letter-spacing: 0.03em;
 }
 
-.footer-item + .footer-item {
+.footer-contacts__item + .footer-contacts__item {
     margin-top: 9px;
 }
 
-.footer-adress {
+.footer-contacts__adress {
     display: inline-block;
 
     font-style: normal;
@@ -499,7 +494,7 @@ p {
     color: var(--white-text-color);
 }
 
-.footer-contact-item {
+.footer-contact__link {
     display: inline-block;
 
     font-style: normal;
@@ -515,7 +510,7 @@ p {
     margin-right: 93px;
 }
 
-.join-title {
+.join-container__title {
     font-weight: 700;
     margin-bottom: 20px;
     color: var(--white-text-color);
@@ -533,24 +528,24 @@ p {
     margin-left: 10px;
 }
 
-.footer-social .icon-wrapper {
+.footer-social .social-list__link {
     color: var(--white-text-color);
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     transition: background-color 250ms var(--timing-function);
 }
 
-.footer-social .icon-wrapper:hover,
-.footer-social .icon-wrapper:focus {
+.footer-social .social-list__link:hover,
+.footer-social .social-list__link:focus {
     background-color: var(--accent-color);
 }
 
-.subscribe-container {
+.subscribe__container {
     display: flex;
     justify-content: space-between;
 }
 
-.subscribe-title {
+.subscribe__title {
     font-weight: bold;
     font-size: 14px;
     line-height: 1.14;
@@ -562,7 +557,7 @@ p {
     color: var(--white-text-color);
 }
 
-.subscribe-email {
+.subscribe__link {
     display: inline-block;
     padding: 15px 16px;
     margin-right: 12px;
@@ -585,24 +580,24 @@ p {
     color: rgba(255, 255, 255, 0.6);
 }
 
-.subscribe-button {
+.subscribe__button {
     width: 200px;
     height: 50px;
 }
 
 /* Портфолио */
 
-.button-container {
+.button-navigation {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
 }
 
-.button-item:not(:last-child) {
+.button-navigation__item:not(:last-child) {
     margin-right: 8px;
 }
 
-.filter-button {
+.button-navigation__label {
     display: inline-block;
     border-radius: 4px;
     padding: 6px 22px;
@@ -622,8 +617,8 @@ p {
         background-color 250ms var(--timing-function);
 }
 
-.filter-button:hover,
-.filter-button:focus {
+.button-navigation__label:hover,
+.button-navigation__label:focus {
     background-color: var(--accent-color);
     color: var(--white-text-color);
     cursor: pointer;
@@ -632,7 +627,7 @@ p {
 
 /* Примеры портфолио */
 
-.portfolio-container {
+.portfolio {
     display: flex;
     flex-wrap: wrap;
     margin-right: calc(-1 * var(--card-set-gap));
@@ -652,16 +647,16 @@ p {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.description-text {
+/* .portfolio-card__text {
     display: none;
-}
+} */
 
-.portfolio-description {
+.portfolio-card__description {
     overflow: hidden;
     position: relative;
 }
 
-.description-text {
+.portfolio-card__text {
     content: "";
     display: flex;
     align-items: center;
@@ -679,12 +674,12 @@ p {
     transition: transform 250ms var(--timing-function);
 }
 
-.portfolio-link:hover .description-text,
-.portfolio-link:focus .description-text {
+.portfolio-card__link:hover .portfolio-card__text,
+.portfolio-card__link:focus .portfolio-card__text {
     transform: translateY(0);
 }
 
-.description-text {
+.portfolio-card__text {
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -694,14 +689,14 @@ p {
     color: var(--white-text-color);
 }
 
-.card-info {
+.portfolio-card__info {
     border-left: 1px solid #eeeeee;
     border-right: 1px solid #eeeeee;
     border-bottom: 1px solid #eeeeee;
     padding: 20px 24px;
 }
 
-.card-title {
+.portfolio-card__title {
     color: var(--primary-text-color);
 
     font-weight: 700;
@@ -710,7 +705,7 @@ p {
     letter-spacing: 0.06em;
 }
 
-.card-description {
+.portfolio-card__label {
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
@@ -790,7 +785,7 @@ p {
 
 /* Форма */
 
-.form-title {
+.form__title {
     margin-bottom: 12px;
     text-align: center;
 
@@ -803,13 +798,13 @@ p {
     color: var(--primary-text-color);
 }
 
-.form-field {
+.form__field {
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
 }
 
-.form-field label {
+.form__field label {
     font-family: var(--secondary-text-color);
     color: var(--secondary-text-color);
     font-weight: 400;
@@ -820,11 +815,11 @@ p {
     letter-spacing: 0.01em;
 }
 
-.icon-container {
+.form__container {
     position: relative;
 }
 
-.form-icon {
+.form__icon {
     position: absolute;
     top: 11px;
     left: 12px;
@@ -832,7 +827,7 @@ p {
     transition: fill 250ms var(--timing-function);
 }
 
-.form-field input {
+.form__field input {
     width: 100%;
     margin: 0;
     padding: 11px 12px 11px 42px;
@@ -842,12 +837,12 @@ p {
     transition: outline-color 250ms var(--timing-function);
 }
 
-.form-field input:focus,
-.form-field textarea:focus {
+.form__field input:focus,
+.form__field textarea:focus {
     outline-color: var(--accent-color);
 }
 
-.icon-container input:focus ~ .form-icon {
+.form__container input:focus ~ .form__icon {
     fill: var(--accent-color);
 }
 
@@ -863,7 +858,7 @@ textarea {
     transition: outline-color 250ms var(--timing-function);
 }
 
-.form-field textarea::placeholder {
+.form__field textarea::placeholder {
     font-weight: 400;
     font-size: 12px;
     line-height: 1.16;
@@ -872,11 +867,11 @@ textarea {
     color: rgba(117, 117, 117, 0.5);
 }
 
-.form-icon {
+.form__icon {
     fill: currentColor;
 }
 
-.checkbox-field {
+.checkbox {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -884,11 +879,11 @@ textarea {
     margin-bottom: 30px;
 }
 
-.checkbox:focus ~ .checkbox-icon {
+.checkbox__input:focus ~ .checkbox__icon {
     border: 2px solid var(--accent-color);
 }
 
-.checkbox-icon {
+.checkbox__icon {
     display: block;
     width: 16px;
     height: 16px;
@@ -900,7 +895,7 @@ textarea {
     transition: background-color 250ms var(--timing-function);
 }
 
-.checkbox:checked + .checkbox-icon {
+.checkbox__input:checked + .checkbox__icon {
     background-color: var(--accent-color);
     background-image: url("../images/full-check.svg");
     background-size: contain;
@@ -908,7 +903,7 @@ textarea {
     border-color: var(--accent-color);
 }
 
-.checkbox-title {
+.checkbox__title {
     display: flex;
     align-items: center;
 
@@ -951,7 +946,7 @@ textarea {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.subscribe-button {
+.subscribe__button {
     position: relative;
     display: inline-block;
     border-radius: 4px;
@@ -972,7 +967,7 @@ textarea {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.subscribe-button::after {
+.subscribe__button::after {
     content: "";
     display: block;
     position: absolute;
