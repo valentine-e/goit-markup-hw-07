@@ -76,8 +76,6 @@ p {
     border-bottom: solid 1px #ececec;
 }
 
-/* Main-nav */
-
 .header {
     display: flex;
     align-items: center;
@@ -416,6 +414,8 @@ p {
     color: var(--secondary-background-color);
     background-color: var(--accent-color);
 }
+
+/* Клиенты */
 
 .clients__list {
     display: flex;

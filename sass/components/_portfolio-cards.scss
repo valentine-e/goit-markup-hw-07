@@ -1,0 +1,87 @@
+/* Примеры портфолио */
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: calc(-1 * var(--card-set-gap));
+    margin-bottom: calc(-1 * var(--card-set-gap));
+}
+
+.portfolio-card {
+    flex-basis: calc(100 / 3 - var(--card-set-gap));
+    margin-right: var(--card-set-gap);
+    margin-bottom: var(--card-set-gap);
+
+    transition: box-shadow 250ms var(--timing-function);
+}
+
+.portfolio-card:focus,
+.portfolio-card:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+/* .portfolio-card__text {
+    display: none;
+} */
+
+.portfolio-card__description {
+    overflow: hidden;
+    position: relative;
+}
+
+.portfolio-card__text {
+    content: "";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+
+    padding: 24px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 150, 243, 0.9);
+
+    transform: translateY(100%);
+    transition: transform 250ms var(--timing-function);
+}
+
+.portfolio-card__link:hover .portfolio-card__text,
+.portfolio-card__link:focus .portfolio-card__text {
+    transform: translateY(0);
+}
+
+.portfolio-card__text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+
+    color: var(--white-text-color);
+}
+
+.portfolio-card__info {
+    border-left: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    padding: 20px 24px;
+}
+
+.portfolio-card__title {
+    color: var(--primary-text-color);
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.portfolio-card__label {
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+    margin-top: 4px;
+}
