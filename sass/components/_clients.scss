@@ -2,32 +2,30 @@
 
 .clients__list {
     display: flex;
-}
 
-.clients__list > li + li {
-    margin-left: 30px;
-}
+    & > li + li {
+        margin-left: 30px;
+    }
 
-.clients-logo {
-    fill: currentColor;
-}
+    .clients-logo {
+        fill: currentColor;
+    }
 
-.clients__link {
-    color: var(--icon-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    .clients__link {
+        color: var(--icon-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 170px;
+        height: 92px;
+        border-radius: 4px;
+        border: 1px solid var(--icon-color);
+        transition: color 250ms var(--timing-function), border-color 250ms var(--timing-function);
 
-    width: 170px;
-    height: 92px;
-    border-radius: 4px;
-    border: 1px solid var(--icon-color);
-
-    transition: color 250ms var(--timing-function), border-color 250ms var(--timing-function);
-}
-
-.clients__link:focus,
-.clients__link:hover {
-    color: var(--accent-color);
-    border-color: var(--accent-color);
+        &:focus,
+        &:hover {
+            color: var(--accent-color);
+            border-color: var(--accent-color);
+        }
+    }
 }

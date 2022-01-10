@@ -12,33 +12,30 @@
 
     opacity: 1;
     transition: opacity 250ms var(--timing-function), visibility 250ms var(--timing-function);
-}
 
-.backdrop.is-hidden {
-    opacity: 0;
-    pointer-events: none;
-    visibility: hidden;
-}
-
-.backdrop.is-hidden .modal {
-    transform: translate(-50%, -50%) scale(0.9);
+    &.is-hidden {
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+    }
 }
 
 .modal {
     position: absolute;
     top: 50%;
     left: 50%;
-
     min-width: 528px;
     min-height: 581px;
     padding: 40px;
     border-radius: 4px;
 
     background-color: var(--primary-background-color);
-
     transform: translate(-50%, -50%) scale(1);
-
     transition: transform 250ms var(--timing-function);
+
+    .backdrop.is-hidden & {
+        transform: translate(-50%, -50%) scale(0.9);
+    }
 }
 
 .close-btn {
@@ -53,17 +50,17 @@
     background-color: var(--primary-background-color);
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
-}
 
-.close-btn svg {
-    transition: fill 250ms var(--timing-function);
-}
+    & .form__icon {
+        transition: fill 250ms var(--timing-function);
+    }
 
-.close-btn:hover svg,
-.close-btn:focus svg {
-    fill: var(--accent-color);
-}
+    &:hover .form__icon,
+    &:focus .form__icon {
+        fill: var(--accent-color);
+    }
 
-.close-btn:hover {
-    cursor: pointer;
+    &:hover {
+        cursor: pointer;
+    }
 }
