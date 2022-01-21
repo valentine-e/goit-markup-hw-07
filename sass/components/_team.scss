@@ -1,12 +1,10 @@
 /* Команда */
 
-.team {
+.section--other-bcg {
     background-color: var(--secondary-background-color);
 }
 
-.occupation__title,
-.team__title,
-.clients__title {
+.section__title {
     margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
@@ -15,12 +13,12 @@
     letter-spacing: 0.03em;
 }
 
-.team-container {
+.team {
     display: flex;
     justify-content: space-between;
 }
 
-.team-card {
+.team-item {
     background-color: var(--primary-background-color);
     max-width: 270px;
     flex-basis: calc(100% / 4);
@@ -31,11 +29,11 @@
         margin-right: 30px;
     }
 
-    .team-card__info {
+    .team__box {
         padding: 30px 0;
     }
 
-    .team-card__name {
+    .team__title {
         margin-bottom: 10px;
         font-weight: 500;
         font-size: 16px;
@@ -44,7 +42,7 @@
         letter-spacing: 0.03em;
     }
 
-    .team-card__position {
+    .team__text {
         font-size: 16px;
         line-height: 1.18;
         text-align: center;

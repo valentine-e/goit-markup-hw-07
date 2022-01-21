@@ -4,14 +4,14 @@
     display: flex;
 }
 
-.advantages__card {
+.advantages__item {
     flex-basis: calc(100% / 4);
 
     &:not(:last-child) {
         margin-right: 30px;
     }
 
-    .advantages__bcg {
+    .advantages__box {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -22,7 +22,7 @@
         margin-bottom: 30px;
     }
 
-    .advantages__item {
+    .advantages__title {
         margin-bottom: 10px;
 
         font-weight: 700;

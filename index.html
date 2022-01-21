@@ -24,9 +24,9 @@
         <!-- Хедер -->
 
         <header class="page-header">
-            <div class="container header">
+            <div class="container page-header__container">
                 <nav class="main-nav">
-                    <a href="./index.html" class="logo"><span class="logo--accent">Web</span>Studio</a>
+                    <a href="./index.html" class="logo"><span class="logo__accent">Web</span>Studio</a>
 
                     <ul class="site-nav">
                         <li class="site-nav__item">
@@ -79,49 +79,49 @@
                     <h2 class="visially-hidden">Преимущества работы с нами</h2>
 
                     <ul class="advantages">
-                        <li class="advantages__card">
-                            <div class="advantages__bcg">
+                        <li class="advantages__item">
+                            <div class="advantages__box">
                                 <svg width="70px" height="70px">
                                     <use href="images/icons.svg#icon-antenna"></use>
                                 </svg>
                             </div>
-                            <h3 class="advantages__item">Внимание к деталям</h3>
+                            <h3 class="advantages__title">Внимание к деталям</h3>
                             <p class="advantages__description">
                                 Идейные соображения, а также начало повседневной работы по формированию позиции.
                             </p>
                         </li>
 
-                        <li class="advantages__card">
-                            <div class="advantages__bcg">
+                        <li class="advantages__item">
+                            <div class="advantages__box">
                                 <svg width="70px" height="70px">
                                     <use href="images/icons.svg#icon-clock"></use>
                                 </svg>
                             </div>
-                            <h3 class="advantages__item">Пунктуальность</h3>
+                            <h3 class="advantages__title">Пунктуальность</h3>
                             <p class="advantages__description">
                                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
                             </p>
                         </li>
 
-                        <li class="advantages__card">
-                            <div class="advantages__bcg">
+                        <li class="advantages__item">
+                            <div class="advantages__box">
                                 <svg width="70px" height="70px">
                                     <use href="images/icons.svg#icon-diagram"></use>
                                 </svg>
                             </div>
-                            <h3 class="advantages__item">Планирование</h3>
+                            <h3 class="advantages__title">Планирование</h3>
                             <p class="advantages__description">
                                 Равным образом консультация с широким активом в значительной степени обуславливает.
                             </p>
                         </li>
 
-                        <li class="advantages__card">
-                            <div class="advantages__bcg">
+                        <li class="advantages__item">
+                            <div class="advantages__box">
                                 <svg width="70px" height="70px">
                                     <use href="images/icons.svg#icon-astronaut"></use>
                                 </svg>
                             </div>
-                            <h3 class="advantages__item">Современные технологии</h3>
+                            <h3 class="advantages__title">Современные технологии</h3>
                             <p class="advantages__description">
                                 Значимость этих проблем настолько очевидна, что реализация плановых заданий.
                             </p>
@@ -132,28 +132,28 @@
 
             <!-- Чем мы занимаемся -->
 
-            <section class="section work-section">
+            <section class="section section--nopadding-top">
                 <div class="container">
-                    <h2 class="occupation__title">Чем мы занимаемся</h2>
+                    <h2 class="section__title">Чем мы занимаемся</h2>
                     <ul class="occupation">
                         <li class="occupation__card">
-                            <img class="occupation__item" src="./images/img_1.jpg" alt="Примеры работ" width="370" />
-                            <div class="occupation__example">
-                                <h3 class="occupation__name">Десктопные приложения</h3>
+                            <img src="./images/img_1.jpg" alt="Примеры работ" width="370" />
+                            <div class="occupation__box">
+                                <h3 class="occupation__title">Десктопные приложения</h3>
                             </div>
                         </li>
 
                         <li class="occupation__card">
-                            <img class="occupation__item" src="./images/img_2.jpg" alt="Примеры работ" width="370" />
-                            <div class="occupation__example">
-                                <h3 class="occupation__name">Мобильные приложения</h3>
+                            <img src="./images/img_2.jpg" alt="Примеры работ" width="370" />
+                            <div class="occupation__box">
+                                <h3 class="occupation__title">Мобильные приложения</h3>
                             </div>
                         </li>
 
                         <li class="occupation__card">
-                            <img class="occupation__item" src="./images/img_3.jpg" alt="Примеры работ" width="370" />
-                            <div class="occupation__example">
-                                <h3 class="occupation__name">Дизайнерские решения</h3>
+                            <img src="./images/img_3.jpg" alt="Примеры работ" width="370" />
+                            <div class="occupation__box">
+                                <h3 class="occupation__title">Дизайнерские решения</h3>
                             </div>
                         </li>
                     </ul>
@@ -162,15 +162,15 @@
 
             <!-- Команда -->
 
-            <section class="team section">
+            <section class="section--other-bcg section">
                 <div class="container">
-                    <h2 class="team__title">Наша команда</h2>
-                    <ul class="team-container">
-                        <li class="team-card">
+                    <h2 class="section__title">Наша команда</h2>
+                    <ul class="team">
+                        <li class="team-item">
                             <img src="./images/our_team_1.jpg" alt="Член команды" width="270" />
-                            <div class="team-card__info">
-                                <h3 class="team-card__name">Игорь Демьяненко</h3>
-                                <p class="team-card__position">Product Designer</p>
+                            <div class="team__box">
+                                <h3 class="team__title">Игорь Демьяненко</h3>
+                                <p class="team__text">Product Designer</p>
                                 <ul class="social-list">
                                     <li>
                                         <a class="social-list__link" href="#">
@@ -204,11 +204,11 @@
                             </div>
                         </li>
 
-                        <li class="team-card">
+                        <li class="team-item">
                             <img src="./images/our_team_2.jpg" alt="Член команды" width="270" />
-                            <div class="team-card__info">
-                                <h3 class="team-card__name">Ольга Репина</h3>
-                                <p class="team-card__position">Frontend Developer</p>
+                            <div class="team__box">
+                                <h3 class="team__title">Ольга Репина</h3>
+                                <p class="team__text">Frontend Developer</p>
                                 <ul class="social-list">
                                     <li>
                                         <a class="social-list__link" href="#">
@@ -245,11 +245,11 @@
                             </div>
                         </li>
 
-                        <li class="team-card">
+                        <li class="team-item">
                             <img src="./images/our_team_3.jpg" alt="Член команды" width="270" />
-                            <div class="team-card__info">
-                                <h3 class="team-card__name">Николай Тарасов</h3>
-                                <p class="team-card__position">Marketing</p>
+                            <div class="team__box">
+                                <h3 class="team__title">Николай Тарасов</h3>
+                                <p class="team__text">Marketing</p>
                                 <ul class="social-list">
                                     <li>
                                         <a class="social-list__link" href="#">
@@ -286,11 +286,11 @@
                             </div>
                         </li>
 
-                        <li class="team-card">
+                        <li class="team-item">
                             <img src="./images/our_team_4.jpg" alt="Член команды" width="270" />
-                            <div class="team-card__info">
-                                <h3 class="team-card__name">Михаил Ермаков</h3>
-                                <p class="team-card__position">UI Designer</p>
+                            <div class="team__box">
+                                <h3 class="team__title">Михаил Ермаков</h3>
+                                <p class="team__text">UI Designer</p>
                                 <ul class="social-list">
                                     <li>
                                         <a class="social-list__link" href="#">
@@ -331,10 +331,10 @@
             </section>
         </main>
 
-        <section class="section clients">
+        <section class="section">
             <div class="container">
-                <h2 class="clients__title">Постоянные клиенты</h2>
-                <ul class="clients__list">
+                <h2 class="section__title">Постоянные клиенты</h2>
+                <ul class="clients">
                     <li>
                         <a class="clients__link" href="#">
                             <svg class="clients-logo" width="41px" height="47px">
@@ -386,7 +386,7 @@
         <footer class="footer">
             <div class="container footer-container">
                 <div class="footer-contacts">
-                    <a class="footer-contacts__logo" href="./index.html"><span class="logo--accent">Web</span>Studio</a>
+                    <a class="footer-contacts__logo" href="./index.html"><span class="logo__accent">Web</span>Studio</a>
                     <address>
                         <ul>
                             <li class="footer-contacts__item">

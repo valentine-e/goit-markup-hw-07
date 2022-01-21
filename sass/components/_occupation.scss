@@ -1,6 +1,6 @@
 /* Чем мы занимаемся */
 
-.work-section {
+.section--nopadding-top {
     padding-top: 0;
 }
 
@@ -15,7 +15,7 @@
         margin-right: 30px;
     }
 
-    .occupation__example {
+    .occupation__box {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -26,7 +26,7 @@
         background-color: rgba(47, 48, 58, 0.8);
     }
 
-    .occupation__name {
+    .occupation__title {
         font-weight: 700;
         font-size: 14px;
         line-height: 1.14;

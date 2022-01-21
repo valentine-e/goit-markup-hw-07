@@ -4,7 +4,7 @@
     border-bottom: solid 1px #ececec;
 }
 
-.header {
+.page-header__container {
     display: flex;
     align-items: center;
 }
@@ -21,23 +21,23 @@
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.03em;
+}
 
-    &--accent {
-        color: var(--accent-color);
-    }
+.logo__accent {
+    color: var(--accent-color);
 }
 
 .site-nav {
     display: flex;
     margin-left: 93px;
+}
 
-    & .site-nav__item + .site-nav__item {
-        margin-left: 50px;
-    }
+.site-nav .site-nav__item + .site-nav__item {
+    margin-left: 50px;
+}
 
-    & .header-contacts__item + .header-contacts__item {
-        margin-left: 50px;
-    }
+.site-nav .header-contacts__item + .header-contacts__item {
+    margin-left: 50px;
 }
 
 .site-nav__link {
